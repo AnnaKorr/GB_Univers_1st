@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		181753BC2016934C001FB03C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181753BB2016934C001FB03C /* AppDelegate.swift */; };
-		181753BE2016934C001FB03C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181753BD2016934C001FB03C /* ViewController.swift */; };
+		181753BE2016934C001FB03C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181753BD2016934C001FB03C /* LoginViewController.swift */; };
 		181753C12016934C001FB03C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181753BF2016934C001FB03C /* Main.storyboard */; };
 		181753C42016934C001FB03C /* GB_Univers_iOS_1_2_Shatrova.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 181753C22016934C001FB03C /* GB_Univers_iOS_1_2_Shatrova.xcdatamodeld */; };
 		181753C62016934C001FB03C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 181753C52016934C001FB03C /* Assets.xcassets */; };
@@ -18,7 +18,7 @@
 /* Begin PBXFileReference section */
 		181753B82016934C001FB03C /* GB_Univers_iOS_1_2_Shatrova.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GB_Univers_iOS_1_2_Shatrova.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		181753BB2016934C001FB03C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		181753BD2016934C001FB03C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		181753BD2016934C001FB03C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		181753C02016934C001FB03C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		181753C32016934C001FB03C /* GB_Univers_iOS_1_2_Shatrova.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GB_Univers_iOS_1_2_Shatrova.xcdatamodel; sourceTree = "<group>"; };
 		181753C52016934C001FB03C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				181753BB2016934C001FB03C /* AppDelegate.swift */,
-				181753BD2016934C001FB03C /* ViewController.swift */,
+				181753BD2016934C001FB03C /* LoginViewController.swift */,
 				181753BF2016934C001FB03C /* Main.storyboard */,
 				181753C52016934C001FB03C /* Assets.xcassets */,
 				181753C72016934C001FB03C /* LaunchScreen.storyboard */,
@@ -139,7 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				181753BE2016934C001FB03C /* ViewController.swift in Sources */,
+				181753BE2016934C001FB03C /* LoginViewController.swift in Sources */,
 				181753C42016934C001FB03C /* GB_Univers_iOS_1_2_Shatrova.xcdatamodeld in Sources */,
 				181753BC2016934C001FB03C /* AppDelegate.swift in Sources */,
 			);
