@@ -16,13 +16,11 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var passwordField: UITextField!
     
-    
-   
     @IBAction func signInButton(_ sender: Any) {
         let username = usrnameField.text!
         let password = passwordField.text!
         
-        if username == "admin" && password == "12345" {
+        if username == "aaa" && password == "111" {
             print("Success!")}
         else {
             print ("Failed")
@@ -34,6 +32,33 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         let hideKeyboardGesture = UITapGestureRecognizer(target: self, action: #selector(self.keyboardHideWithTap))
         scrollView?.addGestureRecognizer(hideKeyboardGesture)
+    }
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        let checkResult = checkSignIn()
+        if !checkSignIn() {
+            showError()
+        }
+        
+        return checkResult
+    }
+    
+    func checkSignIn() -> Bool {
+        let usernameSegue = usrnameField.text!
+            let passwordSegue = passwordField.text!
+        
+            if usernameSegue == "aaa" && passwordSegue == "111" {
+                return true
+            } else {
+                return false
+            }
+    }
+    
+    func showError() {
+        let failedAlert = UIAlertController(title: "Error", message: "Try Again", preferredStyle: UIAlertControllerStyle.alert)
+        let failedAction = UIAlertAction(title: "Ok", style: UIAlertActionStyle.cancel, handler: nil)
+        failedAlert.addAction(failedAction)
+        present(failedAlert, animated: true, completion: nil)
     }
 
     @objc func keyboardWasShown (notification: Notification) {
