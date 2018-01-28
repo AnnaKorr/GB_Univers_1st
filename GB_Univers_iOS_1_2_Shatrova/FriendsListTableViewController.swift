@@ -9,43 +9,33 @@
 import UIKit
 
 class FriendsListTableViewController: UITableViewController {
-
+    
+    let friendsArray = ["Ivan Ivanov", "Boris Borisov", "Sergey Sergeev", "Elena Elenova", "Alexandr Alexandrov"]
+    let friendsPhotosArray = ["Fr1", "Fr2", "Fr3", "Fr4", "Fr5"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return friendsArray.count
     }
 
-    /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let myCell = tableView.dequeueReusableCell(withIdentifier: "table3CelliD", for: indexPath)
+        myCell.textLabel?.text = friendsArray[indexPath.row]
+        let friendsImages = UIImage(named:friendsPhotosArray[indexPath.row])
+        myCell.imageView?.image = friendsImages
 
-        // Configure the cell...
-
-        return cell
+        return myCell
     }
-    */
 
     /*
     // Override to support conditional editing of the table view.

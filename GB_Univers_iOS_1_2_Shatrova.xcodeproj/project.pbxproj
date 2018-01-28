@@ -17,6 +17,7 @@
 		18EE9FFC201E4607007F09F1 /* MyGroupsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE9FFB201E4607007F09F1 /* MyGroupsListTableViewController.swift */; };
 		18EE9FFE201E4632007F09F1 /* FriendPhotosCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE9FFD201E4632007F09F1 /* FriendPhotosCollectionViewController.swift */; };
 		18EEA000201E4741007F09F1 /* NewGroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE9FFF201E4741007F09F1 /* NewGroupsTableViewController.swift */; };
+		18EEA002201E48C0007F09F1 /* DataForCellsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EEA001201E48C0007F09F1 /* DataForCellsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		18EE9FFB201E4607007F09F1 /* MyGroupsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupsListTableViewController.swift; sourceTree = "<group>"; };
 		18EE9FFD201E4632007F09F1 /* FriendPhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendPhotosCollectionViewController.swift; sourceTree = "<group>"; };
 		18EE9FFF201E4741007F09F1 /* NewGroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGroupsTableViewController.swift; sourceTree = "<group>"; };
+		18EEA001201E48C0007F09F1 /* DataForCellsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataForCellsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,12 +67,13 @@
 			isa = PBXGroup;
 			children = (
 				181753BB2016934C001FB03C /* AppDelegate.swift */,
+				18EEA001201E48C0007F09F1 /* DataForCellsViewController.swift */,
 				181753BD2016934C001FB03C /* LoginViewController.swift */,
-				181753BF2016934C001FB03C /* Main.storyboard */,
 				18EE9FF9201E45EF007F09F1 /* FriendsListTableViewController.swift */,
 				18EE9FFD201E4632007F09F1 /* FriendPhotosCollectionViewController.swift */,
 				18EE9FFB201E4607007F09F1 /* MyGroupsListTableViewController.swift */,
 				18EE9FFF201E4741007F09F1 /* NewGroupsTableViewController.swift */,
+				181753BF2016934C001FB03C /* Main.storyboard */,
 				181753C52016934C001FB03C /* Assets.xcassets */,
 				181753C72016934C001FB03C /* LaunchScreen.storyboard */,
 				181753CA2016934C001FB03C /* Info.plist */,
@@ -155,6 +158,7 @@
 				18EE9FFE201E4632007F09F1 /* FriendPhotosCollectionViewController.swift in Sources */,
 				18EE9FFA201E45EF007F09F1 /* FriendsListTableViewController.swift in Sources */,
 				18EE9FFC201E4607007F09F1 /* MyGroupsListTableViewController.swift in Sources */,
+				18EEA002201E48C0007F09F1 /* DataForCellsViewController.swift in Sources */,
 				18EEA000201E4741007F09F1 /* NewGroupsTableViewController.swift in Sources */,
 				181753C42016934C001FB03C /* GB_Univers_iOS_1_2_Shatrova.xcdatamodeld in Sources */,
 				181753BC2016934C001FB03C /* AppDelegate.swift in Sources */,

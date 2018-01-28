@@ -174,7 +174,7 @@
         <!--My Friends-->
         <scene sceneID="86Y-Xb-sEV">
             <objects>
-                <tableViewController id="0tB-PM-dUM" sceneMemberID="viewController">
+                <tableViewController id="0tB-PM-dUM" customClass="FriendsListTableViewController" customModule="GB_Univers_iOS_1_2_Shatrova" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="tGw-R8-zlf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -212,10 +212,10 @@
             </objects>
             <point key="canvasLocation" x="2860" y="329"/>
         </scene>
-        <!--Collection View Controller-->
+        <!--Friend Photos Collection View Controller-->
         <scene sceneID="Vj4-SL-BJK">
             <objects>
-                <collectionViewController id="ogG-1K-hPD" sceneMemberID="viewController">
+                <collectionViewController id="ogG-1K-hPD" customClass="FriendPhotosCollectionViewController" customModule="GB_Univers_iOS_1_2_Shatrova" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="i5c-JK-Bd7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -285,7 +285,7 @@
         <!--My Groups-->
         <scene sceneID="twC-gc-jni">
             <objects>
-                <tableViewController id="D5K-kF-rXo" sceneMemberID="viewController">
+                <tableViewController id="D5K-kF-rXo" customClass="MyGroupsListTableViewController" customModule="GB_Univers_iOS_1_2_Shatrova" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="min-3w-q7W">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -338,10 +338,10 @@
             </objects>
             <point key="canvasLocation" x="2825" y="-483"/>
         </scene>
-        <!--Table View Controller-->
+        <!--New Groups Table View Controller-->
         <scene sceneID="IH1-1B-TgE">
             <objects>
-                <tableViewController id="Y6F-XS-2aj" sceneMemberID="viewController">
+                <tableViewController id="Y6F-XS-2aj" customClass="NewGroupsTableViewController" customModule="GB_Univers_iOS_1_2_Shatrova" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="oyr-Cv-8Xt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
