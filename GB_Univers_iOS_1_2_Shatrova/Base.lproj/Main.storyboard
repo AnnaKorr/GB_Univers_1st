@@ -180,15 +180,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="table3CelliD" id="NWf-uK-lUI">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="table3CelliD" textLabel="3vk-jn-E1R" style="IBUITableViewCellStyleDefault" id="NWf-uK-lUI">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="NWf-uK-lUI" id="Ie7-KQ-fiP">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3vk-jn-E1R">
+                                            <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="ogG-1K-hPD" kind="show" id="bFa-FR-yG4"/>
+                                    <segue destination="ogG-1K-hPD" kind="show" id="KgY-VD-6LV"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -309,9 +318,6 @@
                                         </imageView>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="Y6F-XS-2aj" kind="show" id="mvT-7Z-dXg"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -320,7 +326,13 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="" id="fPF-zj-gWE"/>
-                    <navigationItem key="navigationItem" title="My Groups" id="VEK-uE-Zir"/>
+                    <navigationItem key="navigationItem" title="My Groups" id="VEK-uE-Zir">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="wlh-fn-dQT">
+                            <connections>
+                                <segue destination="Y6F-XS-2aj" kind="show" id="Y25-Ut-WzH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P95-ik-gCK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -334,9 +346,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="vET-MU-VGD">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="table2CelliD" id="ILi-ha-2l9">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ILi-ha-2l9" id="7F2-UA-QRY">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
