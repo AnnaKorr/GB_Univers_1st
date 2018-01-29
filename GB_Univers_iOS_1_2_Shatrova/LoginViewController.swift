@@ -11,7 +11,17 @@ import VK_ios_sdk
 import SwiftyJSON
 import Alamofire
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, VKSdkUIDelegate {
+    func vkSdkShouldPresent(_ controller: UIViewController!) {
+        print("Success baby")
+    }
+    
+    func vkSdkNeedCaptchaEnter(_ captchaError: VKError!) {
+        print("one more time")
+    }
+    
+    
+    let VK_API_ID = "6352014"
 
     @IBOutlet weak var scrollView: UIScrollView!
     
@@ -19,7 +29,7 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var passwordField: UITextField!
     
-    @IBAction func signInButton(_ sender: Any) {
+   /* @IBAction func signInButton(_ sender: Any) {
         let username = usrnameField.text!
         let password = passwordField.text!
         
@@ -29,10 +39,16 @@ class LoginViewController: UIViewController {
             print ("Failed")
         }
     }
-    
+    */
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let sdkInstance = VKSdk.initialize(withAppId: self.VK_API_ID)
+        sdkInstance?.register(self as! VKSdkDelegate)
+        sdkInstance?.uiDelegate = self as! VKSdkUIDelegate
+        
+        
         let hideKeyboardGesture = UITapGestureRecognizer(target: self, action: #selector(self.keyboardHideWithTap))
         scrollView?.addGestureRecognizer(hideKeyboardGesture)
     }

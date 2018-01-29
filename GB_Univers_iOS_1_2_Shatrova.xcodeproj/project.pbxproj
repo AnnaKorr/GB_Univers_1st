@@ -32,6 +32,7 @@
 		181753CA2016934C001FB03C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18227AE3201E73F600F28A0F /* FriendsPhotosCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsPhotosCollectionViewController.swift; sourceTree = "<group>"; };
 		18227AE5201E750A00F28A0F /* FriendsPhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsPhotosCollectionViewCell.swift; sourceTree = "<group>"; };
+		184C42DD201FCA4F00059274 /* VK_ios_sdk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = VK_ios_sdk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18EE9FF9201E45EF007F09F1 /* FriendsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListTableViewController.swift; sourceTree = "<group>"; };
 		18EE9FFB201E4607007F09F1 /* MyGroupsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupsListTableViewController.swift; sourceTree = "<group>"; };
 		18EE9FFF201E4741007F09F1 /* NewGroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGroupsTableViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +56,7 @@
 		181753AF2016934C001FB03C = {
 			isa = PBXGroup;
 			children = (
+				184C42DD201FCA4F00059274 /* VK_ios_sdk.framework */,
 				181753BA2016934C001FB03C /* GB_Univers_iOS_1_2_Shatrova */,
 				181753B92016934C001FB03C /* Products */,
 				E826045C5921BA6CF8A418A3 /* Pods */,
