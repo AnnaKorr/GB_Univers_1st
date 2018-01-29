@@ -197,7 +197,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="ogG-1K-hPD" kind="show" id="KgY-VD-6LV"/>
+                                    <segue destination="BE5-m7-kuV" kind="show" id="wI1-Au-Th8"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -212,39 +212,49 @@
             </objects>
             <point key="canvasLocation" x="2860" y="329"/>
         </scene>
-        <!--Friend Photos Collection View Controller-->
-        <scene sceneID="Vj4-SL-BJK">
+        <!--Friends Photos Collection View Controller-->
+        <scene sceneID="6tP-Ed-aoK">
             <objects>
-                <collectionViewController id="ogG-1K-hPD" customClass="FriendPhotosCollectionViewController" customModule="GB_Univers_iOS_1_2_Shatrova" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="i5c-JK-Bd7">
+                <collectionViewController id="BE5-m7-kuV" customClass="FriendsPhotosCollectionViewController" customModule="GB_Univers_iOS_1_2_Shatrova" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Nre-te-HSu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2h4-de-nJA">
-                            <size key="itemSize" width="50" height="50"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vZ6-RR-Dy3">
+                            <size key="itemSize" width="120" height="120"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <inset key="sectionInset" minX="10" minY="10" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionCelliD" id="944-aW-Agn">
-                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionCelliD" id="s6x-my-z9p" customClass="FriendsPhotosCollectionViewCell" customModule="GB_Univers_iOS_1_2_Shatrova" customModuleProvider="target">
+                                <rect key="frame" x="10" y="10" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rIJ-Nz-QVB">
+                                            <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                    </subviews>
                                 </view>
+                                <size key="customSize" width="120" height="120"/>
+                                <connections>
+                                    <outlet property="photoCell" destination="rIJ-Nz-QVB" id="lH0-z9-MFZ"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
-                            <outlet property="dataSource" destination="ogG-1K-hPD" id="Ee7-wP-nGD"/>
-                            <outlet property="delegate" destination="ogG-1K-hPD" id="Rjl-ck-jH7"/>
+                            <outlet property="dataSource" destination="BE5-m7-kuV" id="L8g-Zn-WAv"/>
+                            <outlet property="delegate" destination="BE5-m7-kuV" id="mNf-yH-tMk"/>
                         </connections>
                     </collectionView>
                 </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="80t-Bb-Afy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BCY-Wr-jyP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3766" y="329"/>
+            <point key="canvasLocation" x="3765.5999999999999" y="328.78560719640183"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="VKh-UH-3Xc">

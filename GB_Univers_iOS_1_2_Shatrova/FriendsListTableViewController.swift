@@ -16,9 +16,7 @@ class FriendsListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
     }
-
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -30,6 +28,7 @@ class FriendsListTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let myCell = tableView.dequeueReusableCell(withIdentifier: "table3CelliD", for: indexPath)
+        
         myCell.textLabel?.text = friendsArray[indexPath.row]
         let friendsImages = UIImage(named:friendsPhotosArray[indexPath.row])
         myCell.imageView?.image = friendsImages

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DataForCellsViewController: UIViewController {
+class DataForCellsViewController: UIViewController, UICollectionViewCell {
 
     let friendsArray = ["Ivan Ivanov", "BorisBorisov", "Sergey Sergeev", "Elena Elenova", "Alexandr Alexandrov"]
     
