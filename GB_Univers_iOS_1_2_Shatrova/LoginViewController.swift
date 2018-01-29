@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import VK_ios_sdk
+import SwiftyJSON
+import Alamofire
 
 class LoginViewController: UIViewController {
 

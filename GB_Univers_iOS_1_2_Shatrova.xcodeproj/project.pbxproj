@@ -18,6 +18,7 @@
 		18EE9FFA201E45EF007F09F1 /* FriendsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE9FF9201E45EF007F09F1 /* FriendsListTableViewController.swift */; };
 		18EE9FFC201E4607007F09F1 /* MyGroupsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE9FFB201E4607007F09F1 /* MyGroupsListTableViewController.swift */; };
 		18EEA000201E4741007F09F1 /* NewGroupsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EE9FFF201E4741007F09F1 /* NewGroupsTableViewController.swift */; };
+		F245A1D8A68D7FCB7C1B9DD2 /* Pods_GB_Univers_iOS_1_2_Shatrova.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E54546F8F1FF2302E31087CA /* Pods_GB_Univers_iOS_1_2_Shatrova.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,9 @@
 		18EE9FF9201E45EF007F09F1 /* FriendsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsListTableViewController.swift; sourceTree = "<group>"; };
 		18EE9FFB201E4607007F09F1 /* MyGroupsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGroupsListTableViewController.swift; sourceTree = "<group>"; };
 		18EE9FFF201E4741007F09F1 /* NewGroupsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGroupsTableViewController.swift; sourceTree = "<group>"; };
+		2B20476144BE8E8878980407 /* Pods-GB_Univers_iOS_1_2_Shatrova.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GB_Univers_iOS_1_2_Shatrova.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GB_Univers_iOS_1_2_Shatrova/Pods-GB_Univers_iOS_1_2_Shatrova.debug.xcconfig"; sourceTree = "<group>"; };
+		D0850C29E8BC3759CD7A5B6F /* Pods-GB_Univers_iOS_1_2_Shatrova.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GB_Univers_iOS_1_2_Shatrova.release.xcconfig"; path = "Pods/Target Support Files/Pods-GB_Univers_iOS_1_2_Shatrova/Pods-GB_Univers_iOS_1_2_Shatrova.release.xcconfig"; sourceTree = "<group>"; };
+		E54546F8F1FF2302E31087CA /* Pods_GB_Univers_iOS_1_2_Shatrova.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GB_Univers_iOS_1_2_Shatrova.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F245A1D8A68D7FCB7C1B9DD2 /* Pods_GB_Univers_iOS_1_2_Shatrova.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +57,8 @@
 			children = (
 				181753BA2016934C001FB03C /* GB_Univers_iOS_1_2_Shatrova */,
 				181753B92016934C001FB03C /* Products */,
+				E826045C5921BA6CF8A418A3 /* Pods */,
+				B54CF3318172DAFFC9F2CC2C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,6 +89,23 @@
 			path = GB_Univers_iOS_1_2_Shatrova;
 			sourceTree = "<group>";
 		};
+		B54CF3318172DAFFC9F2CC2C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E54546F8F1FF2302E31087CA /* Pods_GB_Univers_iOS_1_2_Shatrova.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E826045C5921BA6CF8A418A3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B20476144BE8E8878980407 /* Pods-GB_Univers_iOS_1_2_Shatrova.debug.xcconfig */,
+				D0850C29E8BC3759CD7A5B6F /* Pods-GB_Univers_iOS_1_2_Shatrova.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 181753CD2016934C001FB03C /* Build configuration list for PBXNativeTarget "GB_Univers_iOS_1_2_Shatrova" */;
 			buildPhases = (
+				18B65F0BBC215FF8C518A7C4 /* [CP] Check Pods Manifest.lock */,
 				181753B42016934C001FB03C /* Sources */,
 				181753B52016934C001FB03C /* Frameworks */,
 				181753B62016934C001FB03C /* Resources */,
+				9F24862531BBADD18AE47F7C /* [CP] Embed Pods Frameworks */,
+				A4518521D71B96C3A2C2F667 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,6 +175,64 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18B65F0BBC215FF8C518A7C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GB_Univers_iOS_1_2_Shatrova-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F24862531BBADD18AE47F7C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GB_Univers_iOS_1_2_Shatrova/Pods-GB_Univers_iOS_1_2_Shatrova-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/VK-ios-sdk/VK_ios_sdk.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VK_ios_sdk.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GB_Univers_iOS_1_2_Shatrova/Pods-GB_Univers_iOS_1_2_Shatrova-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4518521D71B96C3A2C2F667 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GB_Univers_iOS_1_2_Shatrova/Pods-GB_Univers_iOS_1_2_Shatrova-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		181753B42016934C001FB03C /* Sources */ = {
@@ -296,6 +381,7 @@
 		};
 		181753CE2016934C001FB03C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B20476144BE8E8878980407 /* Pods-GB_Univers_iOS_1_2_Shatrova.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -310,6 +396,7 @@
 		};
 		181753CF2016934C001FB03C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0850C29E8BC3759CD7A5B6F /* Pods-GB_Univers_iOS_1_2_Shatrova.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
